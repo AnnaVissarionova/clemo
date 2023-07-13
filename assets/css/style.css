@@ -52,12 +52,24 @@ body {
 
 .intro__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     background-color: #ffe1bd;
     max-height: 521px;
     height: 100%;
     margin-top: 40px;
+    max-width: 1149px;
+    width: 100%;
+    margin: 0% auto;
+}
+
+.intro__inner__container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    max-width: 1079px;
+    width: 100%;
+
 }
 
 .intro__inner {
@@ -114,4 +126,34 @@ body {
     font-size: 18px;
     color: white;
     text-decoration: none;
+}
+
+
+/* SLider */
+.slider__container {
+    display: flex;
+    justify-content: center;
+    max-width: 88px;
+    width: 100%;
+	margin: 0 auto;
+}
+
+.slider__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.slide__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slide__nav a {
+    background: #ffe1bd;
+    width: 9px;
+    height: 9px;
+    border: black solid 1px;
+    border-radius: 50%;
+    margin: 10px;
 }
