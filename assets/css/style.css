@@ -380,9 +380,9 @@ body {
     z-index: 1;
 } 
 
-/* #team-slider input[type="radio"] {
+#team-slider input[type="radio"] {
     display: none;
-} */
+}
 
 #team-slider label {
     cursor:pointer;
@@ -411,7 +411,7 @@ body {
  }
 
  #slides .slide {
-    width: 33%;
+    width: 33.33333333333333333%;
     float: left;
     display: flex;
     justify-content: center;
@@ -461,6 +461,7 @@ body {
    display: none;
    width: 50px;
    height: 50px;
+   background-size:100%;
    opacity: .4;
  }
 
@@ -471,8 +472,8 @@ body {
  #slide1:checked ~ #controls label:nth-child(2),
  #slide2:checked ~ #controls label:nth-child(3),
  #slide3:checked ~ #controls label:nth-child(1) {
-    background: url(https://cdn-icons-png.flaticon.com/512/3599/3599455.png) no-repeat;
-    background: black no-repeat;
+    background: url(../next.png);
+    background-size: 100%;
     float: right;
     margin: 0 -10px 0 0;
     display: block;
@@ -482,8 +483,8 @@ body {
  #slide2:checked ~ #controls label:nth-child(1),
  #slide3:checked ~ #controls label:nth-child(2) {
     /* background: url(https://cdn-icons-png.flaticon.com/512/3599/3599455.png) no-repeat; */
-    background: black no-repeat;
-    background: url('../assets/next.png') no-repeat;
+    background: url(../previous.png);
+    background-size: 100%;
     float: left;
     margin: 0 0 0 -10px;
     display: block;
@@ -508,5 +509,193 @@ body {
 #slide2:checked ~ #bullets label:nth-child(2),
 #slide3:checked ~ #bullets label:nth-child(3) {
    background: black;
+}
+
+
+/* Reviews */
+.reviews {
+    max-height: 766px;
+    height: 100%;
+}
+
+.reviews-container {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-heading {
+    margin-top: 0px;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 812px;
+    width: 100%; */
+}
+
+.review-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 35px 0px 0px;
+}
+
+.review-author h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.review-author h2::after {
+    display: block;
+    content: "";
+    background-color: black;
+    width: 55px;
+    height: 3px;
+    align-self: end;
+    margin: 10px 0px;
+}
+
+.review-author h3 {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: end;
+}
+
+.review-text {
+    margin-left: 35px;
+    font-size: 18px;
+    color: #656565;
+    text-align: start;
+    width: 490px;
+}
+
+.review-photos {
+    width: 1149px;
+    margin: 90px 0px 120px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-photos img {
+    width: 266px;
+    height: 140px;
+    object-fit: cover;
+}
+
+
+/* Footer */
+.contacts-container {
+    height: 702px;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-container h1 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.contacts-inner {
+    max-height: 387px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts-info {
+    width: 491px;
+    padding-right: 28px;
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-line {
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    margin-bottom: 55px;
+}
+
+.info-line img {
+    width: 15px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.info-line h2 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+.contacts-sites .icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+.contacts-form {
+    width: 519px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 29px;
+    margin-left: 35px;
+    margin-bottom: 0px;
+    margin-bottom: 0;
+}
+
+
+.contacts-form input, 
+.contacts-form textarea {
+    height: 48px;
+    width: 463px;
+    color: #656565;
+    background: #00000000;
+    border-color: #00000000;
+    border-bottom: 1px solid #656565;
+    text-align: start;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.contacts-form textarea {
+    margin-top: 10px;
+    resize: none;
+    height: 96px;
+}
+
+.contacts-form button {
+    background: white;
+    width: 169px;
+    height: 50px;
+    text-align: center;
+    color: #000;
+    border-radius: 2em;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 30px;
 }
 
