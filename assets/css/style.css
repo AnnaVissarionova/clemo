@@ -373,11 +373,13 @@ body {
     background: #ffe1bd; 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 52px;
 }
 
 .team-heading {
+    margin: 0 0 20px 0;
     font-size: 60px;
     font-weight: 300;
 }
@@ -649,8 +651,7 @@ body {
 }
 
 .info-line img {
-    width: 15px;
-    height: 20px;
+    width: 1rem;
     margin-right: 20px;
 }
 
@@ -674,7 +675,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0px 29px;
+    padding: 0 0 0 29px;
     margin-left: 35px;
     margin-bottom: 0px;
     margin-bottom: 0;
@@ -684,7 +685,6 @@ body {
 .contacts-form input, 
 .contacts-form textarea {
     height: 48px;
-    width: 463px;
     color: #656565;
     background: #00000000;
     border-color: #00000000;
